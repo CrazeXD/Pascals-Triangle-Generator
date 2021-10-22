@@ -1,6 +1,6 @@
 from pascalstriangle import generate_triangle
 import sys
-import math
+import time
 
 triangle = []
 
@@ -14,9 +14,12 @@ exptriangle = generate_triangle(exponent, triangle)
 
 expression = ''
 
+
 change = 0
 while exponent-change>0:
     expression+= f'{exptriangle[exponent][change]}a^{exponent-change}*b^{change} * '
     change+=1
 expression += f'a^0*b^{exponent}'
 print(expression)
+time.sleep(10)
+sys.exit()
