@@ -17,9 +17,8 @@ expression = ''
 
 change = 0
 while exponent-change>0:
-    expression+= f'{exptriangle[exponent][change]}a^{exponent-change}*b^{change} * '
+    expression+= f'{exptriangle[exponent][change]}a^{exponent-change}*b^{change} + '
     change+=1
 expression += f'a^0*b^{exponent}'
 print(expression)
-time.sleep(10)
-sys.exit()
+time.sleep(10000)
